@@ -47,6 +47,14 @@ Counter >> increment [
 	count := count + 1
 ]
 
+{ #category : 'initialization' }
+Counter >> initialize [
+	"set the initial value of the value to 0"
+
+	super initialize.
+	count := 0
+]
+
 { #category : 'printing' }
 Counter >> printOn: aStream [
 
