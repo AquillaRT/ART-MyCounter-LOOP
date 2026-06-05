@@ -47,6 +47,13 @@ Counter >> increment [
 	count := count + 1
 ]
 
+{ #category : 'operation' }
+Counter >> incrementByTwo [
+
+	self increment.
+	self increment
+]
+
 { #category : 'initialization' }
 Counter >> initialize [
 	"set the initial value of the value to 0"
